@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Speech API WebSocket Sender</title>
+  <script>
+    (function() {
+
+      // WebSocket でサーバと接続
+      var ws = new WebSocket('wss://localhost:{CHROME_PORT}');
+
+      // Web Speech API で音声認識
+      var recognition = new webkitSpeechRecognition();
+
+      // 連続音声認識
+      recognition.continuous = true;
+	  recognition.interimResults = true;
+		
+
+      recognition.start();
+	  //recognition.lang = "ja-JP";
+      // エラー表示
+      recognition.onerror = function(err) {
+          console.error(err);
+      }
+
+      // 無音停止時に自動で再開
+      recognition.onspeechend = function() {
+          recognition.stop();
+          setTimeout(function() {
+            recognition.start();
+          }, 1000);
+      }     
+	  
+	 // recognition.start();
+
+      // 音声認識結果をサーバへ送信
+	  		
+	  var sstring = "";
+      recognition.onresult = function(event) {
+        for (var i = event.resultIndex; i < event.results.length; ++i) {
+          var result = event.results[event.resultIndex][0].transcript;
+          document.getElementById('result').innerHTML = result;
+          ws.send(result);
+		  sstring += result;
+		  console.log(sstring);
+		    if (sstring.match(/English/)){
+			  recognition.lang = 'en-US';
+			  console.log("eigo");
+		  	}
+		  	if(sstring.match(/日本語/)||sstring.match(/Japanese/)){
+			  recognition.lang = "ja-JP";
+			}
+        }
+      }    
+
+	//  recognition.start();
+
+      // 音声認識開始　
+
+		
+	setTimeout("location.reload()",7000);
+    })();
+  </script>
+</head>
+<body>
+  <div id="result"></div>
+</body>
+</html>
