@@ -6,3 +6,4 @@ Temp
 *.userprefs
 
 .DS_Store
+.vs
