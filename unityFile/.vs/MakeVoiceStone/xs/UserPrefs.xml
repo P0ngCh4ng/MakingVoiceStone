@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{72EED551-E35E-2E0F-3927-E69A13A8185F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/TextChange.cs">
+    <Files>
+      <File FileName="Assets/Script/CreateBox.cs" Line="16" Column="27" />
+      <File FileName="Assets/Script/TextChange.cs" Line="93" Column="35" />
+      <File FileName="Assets/Script/WSVoiceRecognition.cs" Line="25" Column="1" />
+      <File FileName="Assets/UnityChan/Models/UnityChanShader/Shader/CharaSkin.cg" Line="93" Column="68" />
+      <File FileName="Assets/UnityChan/Scripts/AutoBlink.cs" Line="26" Column="18" />
+      <File FileName="Assets/Script/NewBehaviourScript.cs" Line="26" Column="23" />
+      <File FileName="Assets/UnityChan/Scripts/ThirdPersonCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3f0473ba-0d1e-4502-9d0a-24b800f6cc4b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
