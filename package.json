@@ -1,0 +1,24 @@
+{
+  "name": "voicestone",
+  "version": "1.0.0",
+  "description": "hi,there",
+  "main": "server.js",
+  "dependencies": {
+    "ws": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P0ngCh4ng/MakingVoiceStone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/P0ngCh4ng/MakingVoiceStone/issues"
+  },
+  "homepage": "https://github.com/P0ngCh4ng/MakingVoiceStone#readme"
+}
