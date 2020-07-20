@@ -1,0 +1,2 @@
+# MakingVoiceStone
+**このブランチは動きません**
